@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="bank2.css">
+    <title>Bank inside </title>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center  mt-6">Lets go some  <span class="font-semibold text-emerald-300">Money$</span><span class="text-fuchsia-600 hover:text-sky-400">!!!! </span><h1>
+    </header>
+    <main>
+       <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+            <div class="bg-emerald-600 p-8 rounded-xl">
+            <h4 class="text-2xl">  Deposit</h4>
+            <h2  class="text-4xl">$<span id="diposit-total">00</span></h2>
+            </div>
+            <div class="bg-red-600 p-8 rounded-xl">
+                <h4 class="text-2xl"> Withdraw</h4>
+                <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-fuchsia-800 p-8 rounded-xl">
+                    <h4 class="text-2xl"> Blance</h4>
+                    <h2 class="text-4xl">$<span id="blaance-total">2440</span></h2>
+                    </div>
+        </div>
+       </section>
+       <!---Diposit withdraw -->
+       <section class="mt-12">
+        <div id="bigsection" class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+           <div id='allsection'class="bg-pink-500 p-8 rounded-xl">
+                <h4 class="text-2xl mb-4 text-white"> Diposit</h4>
+                <input id="dposit-email" class=" w-9/12 block mb-2 px-3 bg-fuchsia-800" type="" name="" placeholder="amount Diposit button here ">
+                <button id="diposit" class=" hover:bg-emerald-600 text-1xl px-8 py-1 text-white">Diposit</button>
+                </div>
+
+                <div class="bg-pink-500 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4 text-white">Blance</h4>
+                    <input class=" w-9/12 block mb-2 px-3 px-3 bg-fuchsia-800" type="" name="" id="balnce-email" placeholder="Withdraw now">
+                   <button id="btn-withdraw" class=" hover:bg-emerald-600 text-1xl px-8 py-1 text-white">withdraw</button>
+                    </div>
+        </div>
+       </section>
+    </main>
+    <script src="bank2.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
